@@ -1,3 +1,4 @@
+// Constructor for answers
 var Answer = function (data) {
     this.name = ko.observable(data.name);
     this.count = ko.observable(0);
