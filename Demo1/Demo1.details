@@ -1,10 +1,13 @@
 ---
- name: Simple survey
- description: Shows the basics of KnockoutJS
+ name: Bootstrap Select Button Demo
+ description: This shows the most basic configuration, an Array of Strings
  authors:
-   - Marc D Anderson
+   - Brian Vaughn
  resources:
-   - https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js
-   - https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js
+   - http://code.jquery.com/jquery-1.11.0.min.js
+   - http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js
+   - http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+   - http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+   - http://rawgit.com/bvaughn/bootstrap-select-button/master/dist/bootstrap-select-button.js
  normalize_css: no
  ...
