@@ -1,0 +1,37 @@
+#survey-main {
+    font-family:tahoma,"Times New Roman",serif;
+}
+
+#survey-ask,
+#survey-results {
+    height: 250px;
+    width: 50%;
+    padding: 10px;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#survey-results li, #survey-ask li {
+    height: 30px;
+    background-color: #d2d2d2;
+}
+
+#survey-results li > div {
+    height: 30px;
+    max-width: 80%;
+    float: left;
+}
+
+#survey-results li > div.survey-label {
+    width: 20%;
+}
