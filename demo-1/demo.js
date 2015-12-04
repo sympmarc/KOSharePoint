@@ -39,6 +39,7 @@ var ViewModel = function () {
     }
 };
 
+// Give some time for libraries to load
 setTimeout(function() {
     ko.applyBindings(new ViewModel());
-}, 100);
+}, 500);
