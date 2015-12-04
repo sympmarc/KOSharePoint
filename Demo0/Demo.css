@@ -21,6 +21,10 @@ ul {
     clear: both;
 }
 
+.selected a {
+    color: aquamarine;
+}
+
 #survey-results li, #survey-ask li {
     height: 30px;
     background-color: #d2d2d2;
