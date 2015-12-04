@@ -3,7 +3,5 @@
  description: Shows the basics of KnockoutJS
  authors:
    - Marc D Anderson
- resources:
-   -
  normalize_css: no
  ...
