@@ -3,11 +3,11 @@
     <div id="survey-ask">
         <h2>Question</h2>
         <label data-bind="text: $root.question"></label>
-        <ol data-bind="foreach: answers">
-            <li  data-bind="css: { selected: $root.selectedAnswer() === name() }">
+        <ul data-bind="foreach: answers">
+            <li data-bind="css: { selected: $root.selectedAnswer() === name() }">
                 <a href="#" data-bind="text: name, click: $root.surveyAnswer"></a>
             </li>
-        </ol>
+        </ul>
     </div>
 
 </div>
