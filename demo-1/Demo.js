@@ -32,9 +32,7 @@ var ViewModel = function () {
             return ans.name() === answer.name();
         });
         thisAnswer.count(thisAnswer.count() + 1);
-        self.totalCount(self.totalCount() + 1);
         self.selectedAnswer(answer.name());
-        self.currentView("results");
     }
 };
 
