@@ -3,11 +3,11 @@
     <div id="survey-ask" data-bind="visible: $root.currentView() === 'ask'">
         <h2>Question</h2>
         <label data-bind="text: $root.question"></label>
-        <ul data-bind="foreach: answers">
+        <ol data-bind="foreach: answers">
             <li>
                 <a href="#" data-bind="text: name, click: $root.surveyAnswer "></a>
             </li>
-        </ul>
+        </ol>
         <div data-bind="click: currentView('results')">See Results</div>
     </div>
 
