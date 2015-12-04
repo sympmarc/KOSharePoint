@@ -39,4 +39,6 @@ var ViewModel = function () {
     }
 };
 
-ko.applyBindings(new ViewModel());
+$(document).ready(function() {
+    ko.applyBindings(new ViewModel());
+});
