@@ -38,4 +38,6 @@ var ViewModel = function () {
     }
 };
 
-ko.applyBindings(new ViewModel());
+setTimeout(function() {
+    ko.applyBindings(new ViewModel());
+}, 100);
