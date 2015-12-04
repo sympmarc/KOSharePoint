@@ -22,7 +22,6 @@ var ViewModel = function () {
             name: "Green"
         })
     ]);
-    self.currentView = ko.observable("ask");
     self.selectedAnswer = ko.observable("");
     self.totalCount = ko.observable(0);
 

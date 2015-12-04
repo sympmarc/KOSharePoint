@@ -1,0 +1,28 @@
+<div id="survey-main">
+
+    <div id="survey-ask" data-bind="visible: $root.currentView() === 'ask'">
+        <h2>Question</h2>
+        <label data-bind="text: $root.question"></label>
+        <ul data-bind="foreach: answers">
+            <li>
+                <a href="#" data-bind="text: name, click: $root.surveyAnswer "></a>
+            </li>
+        </ul>
+        <div data-bind="click: currentView('results')">See Results</div>
+    </div>
+
+    <div id="survey-results" data-bind="visible: $root.currentView() === 'results'">
+
+        <h2>Results</h2>
+        <label data-bind="text: $root.question"></label>
+        <ul data-bind="foreach: answers">
+            <li>
+                <div class="survey-label" data-bind="text: name"></div>
+                <div data-bind="text: count, style: { width: 100* (count() / $root.totalCount()) + '%', 'background-color': name}"></div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <div data-bind="click: currentView('ask')">See Question</div>
+    </div>
+
+</div>
