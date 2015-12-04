@@ -12,11 +12,6 @@
     color: #fff;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 .clear {
     clear: both;
 }
@@ -35,26 +30,4 @@ ul {
 }
 #survey-ask li.selected a {
     color:#fff;
-}
-
-#survey-results li {
-    height:20px;
-    background-color: #fff;
-    border-radius:5px;
-    padding:5px;
-    margin:5px;
-}
-#survey-results li > div {
-    height: 30px;
-    max-width: 80%;
-    float: left;
-}
-
-#survey-results li > div.survey-label {
-    width: 20%;
-    color:#000;
-}
-#survey-results li > div.survey-count {
-    padding:0 0 0 10px;
-
 }
