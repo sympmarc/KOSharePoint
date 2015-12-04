@@ -6,5 +6,6 @@
  resources:
    - https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js
    - https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js
+   - http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css
  normalize_css: no
  ...
