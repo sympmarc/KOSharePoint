@@ -29,4 +29,7 @@ var ViewModel = function () {
     }
 };
 
-ko.applyBindings(new ViewModel());
+// Give some time for libraries to load
+setTimeout(function() {
+    ko.applyBindings(new ViewModel());
+}, 500);

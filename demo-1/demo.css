@@ -21,11 +21,14 @@ ul {
     clear: both;
 }
 
-#survey-results li, #survey-ask li {
+#survey-ask li {
     background-color: #fff;
     border-radius:5px;
     padding:5px;
     margin:5px;
+}
+#survey-ask li a {
+    text-decoration: none;
 }
 #survey-ask li.selected {
     background-color: green;
@@ -34,10 +37,13 @@ ul {
     color:#fff;
 }
 
-#survey-ask li a {
-    text-decoration: none;
+#survey-results li {
+    height:20px;
+    background-color: #fff;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
 }
-
 #survey-results li > div {
     height: 30px;
     max-width: 80%;
@@ -46,4 +52,9 @@ ul {
 
 #survey-results li > div.survey-label {
     width: 20%;
+    color:#000;
+}
+#survey-results li > div.survey-count {
+    padding:0 0 0 10px;
+
 }
