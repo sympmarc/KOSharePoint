@@ -39,6 +39,6 @@ var ViewModel = function () {
     }
 };
 
-
+setTimeout(function() {
     ko.applyBindings(new ViewModel());
-
+}, 100);
