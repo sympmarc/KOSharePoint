@@ -1,0 +1,9 @@
+---
+ name: Simple survey
+ description: Shows the basics of KnockoutJS
+ authors:
+   - Marc D Anderson
+ resources:
+   - http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css
+ normalize_css: no
+ ...
