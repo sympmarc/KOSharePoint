@@ -69,9 +69,6 @@ var ViewModel = function() {
 
 		// Build up the payload
 		var payload = {
-			"__metadata": {
-				"type": "SP.Data.SurveysListItem"
-			},
 			Answers: ko.toJSON(self.answers())
 		};
 
@@ -81,9 +78,8 @@ var ViewModel = function() {
 				"/_api/web/lists/getbytitle('Surveys')/items(" + self.questionId() + ")",
 			method: "POST",
 			data: ko.toJSON(payload),
-			contentType: "application/json;odata=verbose",
+			contentType: "application/json;odata=nometadata",
 			headers: {
-				'Accept': 'application/json;odata=verbose',
 				'X-RequestDigest': $('#__REQUESTDIGEST').val(),
 				'X-HTTP-Method': 'MERGE',
 				'If-Match': "*"

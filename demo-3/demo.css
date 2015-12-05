@@ -2,6 +2,10 @@
     font-family:tahoma,"Times New Roman",serif;
 }
 
+#survey-main h2 {
+    color:#fff;
+}
+
 #survey-ask,
 #survey-results {
     height: 250px;

@@ -44,7 +44,7 @@ var ViewModel = function() {
                 failure(data); // Do something with the error
             }
         });
-    };
+    }
     self.getQuestion();
 
     // Function to handle a user clicking an answer
@@ -62,7 +62,7 @@ var ViewModel = function() {
 
         // Switch the view
         self.currentView("results");
-    };
+    }
 
     // Save the info to the SharePoint list
     self.saveQuestion = function() {
