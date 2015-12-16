@@ -1,3 +1,5 @@
+[![bitHound Overall Score](https://www.bithound.io/github/sympmarc/KOSharePoint/badges/score.svg)](https://www.bithound.io/github/sympmarc/KOSharePoint)
+
 # KOSharePoint
 
 This project contains demo code for my course Creating SharePoint Solutions with KnockoutJS.
