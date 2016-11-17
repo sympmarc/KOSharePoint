@@ -1,0 +1,44 @@
+﻿<link type="text/css" rel="stylesheet" href="/sites/Demos2013/KOSharePoint/Shared%20Documents/demo-6/demo.css"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+
+<script type="text/javascript" src="/sites/Demos2013/KOSharePoint/Shared%20Documents/demo-6/demo_data.js"></script>
+<script type="text/javascript" src="/sites/Demos2013/KOSharePoint/Shared%20Documents/demo-6/demo.js"></script>
+
+
+<div id="survey-main">
+
+    <div id="survey-ask" data-bind="visible: $root.currentView() === 'ask', template: { name: 'Ask' } "></div>
+
+    <div id="survey-results" data-bind="visible: $root.currentView() === 'results', template: { name: 'Results' }"></div>
+
+</div>
+
+<script type="text/html" id="Ask">
+
+    <h2>Quick Survey</h2>
+    <label data-bind="text: $root.question"></label>
+
+    <ol data-bind="foreach: answers">
+        <li>
+            <a href="#" data-bind="text: name, click: $root.surveyAnswer "></a>
+        </li>
+    </ol>
+    
+    <div class="action" data-bind="click: currentView('results')">See Results</div>
+
+</script>
+
+<script type="text/html" id="Results">
+
+    <h2>Survey Results</h2>
+    <label data-bind="text: $root.question"></label>
+
+    <ol data-bind="foreach: answers">
+        <li data-bind="responseBar: { name: name, count: count, total: $root.totalCount }"></li>
+    </ol>
+
+    <div class="action" data-bind="click: currentView('ask')">See Question</div>
+
+</script>

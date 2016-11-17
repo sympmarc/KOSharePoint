@@ -1,0 +1,49 @@
+﻿#survey-main {
+    font-family:tahoma,"Times New Roman",serif;
+}
+
+#survey-main h2 {
+    color:#fff;
+}
+#survey-main a, .action {
+	cursor:pointer;
+}
+
+#survey-ask,
+#survey-results {
+    height: 250px;
+    width: 50%;
+    padding: 10px;
+    background-color: #332F81;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px #c2c2c2;
+    color: #fff;
+}
+
+#survey-ask li, #survey-results li {
+    height:20px;
+    background-color: #fff;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+}
+#survey-ask li a {
+    text-decoration: none;
+}
+
+#survey-results li > div {
+    height: 20px;
+    max-width: 80%;
+    float: left;
+}
+
+#survey-results li > div.survey-label {
+    width: 20%;
+    color:#000;
+}
+#survey-results li > div.survey-count {
+    padding:0 0 0 0;
+    text-align:center;
+    background-color: #9E9F35;
+    color:#fff;
+}
